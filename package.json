@@ -1,0 +1,17 @@
+{
+  "name": "nanoid-action",
+  "version": "1.0.0",
+  "description": "Github Action for creating a Nano ID",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Jeffrey Ricker",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "nanoid": "^5.0.7"
+  }
+}

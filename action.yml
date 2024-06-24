@@ -1,0 +1,17 @@
+name: 'Nano ID'
+description: 'Generate a Nano ID'
+inputs:
+  alphabet:  # id of input
+    description: 'Character set to use in ID'
+    required: false
+    default: '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  length:
+    description: Number of characters in ID
+    required: false
+    default: '8'
+outputs:
+  id: 
+    description: 'Nano ID'
+runs:
+  using: 'node20'
+  main: 'index.js'
