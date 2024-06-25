@@ -21,8 +21,23 @@ The generated Nano ID.
 ## Example
 
 ```yaml
-uses: 
-with:
-  length: 12
+name: Nano ID
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    name: Nano IDs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Default
+        uses: ricker-flow/nanoid-action@v1
+      - name: Long
+        uses: ricker-flow/nanoid-action@v1
+        with:
+          length: 20
+      - name: Alphabet
+        uses: ricker-flow/nanoid-action@v1
+        with:
+          alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-
   
 ```
